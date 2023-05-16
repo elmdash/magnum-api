@@ -1,0 +1,16 @@
+[package]
+name = "magnum-api"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0.16" }
+quote = { version = "1.0.27" }
+proc-macro2 = { version = "1.0.57" }
+
+[dev-dependencies]
+serde = { version = "1.0.163", features = ["derive"] }
+serde_json = { version = "1.0.96" }
